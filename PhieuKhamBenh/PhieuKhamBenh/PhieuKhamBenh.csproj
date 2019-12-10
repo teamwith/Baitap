@@ -52,14 +52,17 @@
     <Compile Include="add.Designer.cs">
       <DependentUpon>add.cs</DependentUpon>
     </Compile>
+    <Compile Include="InPhieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InPhieu.Designer.cs">
+      <DependentUpon>InPhieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Thaotac.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Thaotac.Designer.cs">
       <DependentUpon>Thaotac.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PhieuKhamBenh.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConnectDB_SQL.cs" />
     <Compile Include="clsTrieuChung.cs" />
@@ -83,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="add.resx">
       <DependentUpon>add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InPhieu.resx">
+      <DependentUpon>InPhieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Thaotac.resx">
       <DependentUpon>Thaotac.cs</DependentUpon>

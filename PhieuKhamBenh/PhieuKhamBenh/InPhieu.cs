@@ -17,11 +17,11 @@ using System.Data.Sql;
 namespace PhieuKhamBenh
 {
     /// <summary>
-    /// Description of MainForm.
+    /// Description of InPhieu.
     /// </summary>
-    public partial class MainForm : Form
+    public partial class InPhieu : Form
     {
-        public MainForm()
+        public InPhieu()
         {
             //
             // The InitializeComponent() call is required for Windows Forms designer support.
@@ -83,17 +83,7 @@ namespace PhieuKhamBenh
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (kiemtra())
-            {
-                Insert_Bacsy();
-                MessageBox.Show("Insert Thành Công", "Chúc mừng", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                InPhieu inPhieu = new InPhieu();
-                inPhieu.Show();
-            }
             
-            else
-                MessageBox.Show("Chưa có in được nha!");
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -163,6 +153,11 @@ namespace PhieuKhamBenh
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -64,12 +64,9 @@ namespace PhieuKhamBenh
 
         private void BtnDangky_Click(object sender, EventArgs e)
         {
-            this.Show();
-           // add ad = new add();
-           // ad.Show();
-
-
-
+           this.Hide();
+            Add add = new Add();
+            add.Show();
         }
 
         private void CbxHienmatkhau_CheckedChanged(object sender, EventArgs e)

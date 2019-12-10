@@ -10,3 +10,4 @@ F:\TeamWith\PhieuKhamBenh\PhieuKhamBenh\bin\Debug\PhieuKhamBenh.exe
 F:\TeamWith\PhieuKhamBenh\PhieuKhamBenh\bin\Debug\PhieuKhamBenh.pdb
 F:\TeamWith\PhieuKhamBenh\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.exe
 F:\TeamWith\PhieuKhamBenh\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.pdb
+F:\TeamWith\PhieuKhamBenh\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.InPhieu.resources

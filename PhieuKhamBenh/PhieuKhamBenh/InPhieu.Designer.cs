@@ -8,7 +8,7 @@
  */
 namespace PhieuKhamBenh
 {
-    partial class MainForm
+    partial class InPhieu
     {
         /// <summary>
         /// Designer variable used to keep track of non-visual components.
@@ -62,8 +62,6 @@ namespace PhieuKhamBenh
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.Buttoninvaluu = new System.Windows.Forms.Button();
-            this.btnNhaplai = new System.Windows.Forms.Button();
             this.btnQuaylai = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -93,6 +91,7 @@ namespace PhieuKhamBenh
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.Buttoninvaluu = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -219,39 +218,14 @@ namespace PhieuKhamBenh
             this.richTextBox5.TabIndex = 11;
             this.richTextBox5.Text = "";
             // 
-            // Buttoninvaluu
-            // 
-            this.Buttoninvaluu.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Buttoninvaluu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buttoninvaluu.ForeColor = System.Drawing.Color.Red;
-            this.Buttoninvaluu.Location = new System.Drawing.Point(6, 552);
-            this.Buttoninvaluu.Name = "Buttoninvaluu";
-            this.Buttoninvaluu.Size = new System.Drawing.Size(323, 44);
-            this.Buttoninvaluu.TabIndex = 1;
-            this.Buttoninvaluu.Text = "In phiếu và lưu";
-            this.Buttoninvaluu.UseVisualStyleBackColor = false;
-            this.Buttoninvaluu.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // btnNhaplai
-            // 
-            this.btnNhaplai.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.btnNhaplai.ForeColor = System.Drawing.Color.Red;
-            this.btnNhaplai.Location = new System.Drawing.Point(422, 552);
-            this.btnNhaplai.Name = "btnNhaplai";
-            this.btnNhaplai.Size = new System.Drawing.Size(140, 44);
-            this.btnNhaplai.TabIndex = 2;
-            this.btnNhaplai.Text = "Nhập lại";
-            this.btnNhaplai.UseVisualStyleBackColor = true;
-            this.btnNhaplai.Click += new System.EventHandler(this.BtnNhaplai_Click);
-            // 
             // btnQuaylai
             // 
             this.btnQuaylai.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.btnQuaylai.Location = new System.Drawing.Point(626, 552);
+            this.btnQuaylai.Location = new System.Drawing.Point(626, 554);
             this.btnQuaylai.Name = "btnQuaylai";
             this.btnQuaylai.Size = new System.Drawing.Size(339, 44);
             this.btnQuaylai.TabIndex = 3;
-            this.btnQuaylai.Text = "Quay lại";
+            this.btnQuaylai.Text = "BACK";
             this.btnQuaylai.UseVisualStyleBackColor = true;
             this.btnQuaylai.Click += new System.EventHandler(this.btnHuy_Click);
             // 
@@ -279,7 +253,7 @@ namespace PhieuKhamBenh
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(181, 109);
+            this.textBox2.Location = new System.Drawing.Point(181, 217);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(339, 33);
@@ -482,6 +456,7 @@ namespace PhieuKhamBenh
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(115, 32);
             this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // tableLayoutPanel2
             // 
@@ -505,7 +480,6 @@ namespace PhieuKhamBenh
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label11, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.label15, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox2, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.textBox3, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label10, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label9, 0, 1);
@@ -514,6 +488,7 @@ namespace PhieuKhamBenh
             this.tableLayoutPanel2.Controls.Add(this.textBox4, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.textBox5, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.textBox6, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.textBox2, 1, 4);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 54);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 9;
@@ -570,7 +545,20 @@ namespace PhieuKhamBenh
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // MainForm
+            // Buttoninvaluu
+            // 
+            this.Buttoninvaluu.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Buttoninvaluu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buttoninvaluu.ForeColor = System.Drawing.Color.Red;
+            this.Buttoninvaluu.Location = new System.Drawing.Point(6, 552);
+            this.Buttoninvaluu.Name = "Buttoninvaluu";
+            this.Buttoninvaluu.Size = new System.Drawing.Size(323, 44);
+            this.Buttoninvaluu.TabIndex = 1;
+            this.Buttoninvaluu.Text = "NEXT";
+            this.Buttoninvaluu.UseVisualStyleBackColor = false;
+            this.Buttoninvaluu.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // InPhieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -581,12 +569,11 @@ namespace PhieuKhamBenh
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnQuaylai);
-            this.Controls.Add(this.btnNhaplai);
             this.Controls.Add(this.Buttoninvaluu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Red;
             this.Location = new System.Drawing.Point(684, 537);
-            this.Name = "MainForm";
+            this.Name = "InPhieu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MainFormLoad);
             this.Click += new System.EventHandler(this.btnHuy_Click);
@@ -598,9 +585,6 @@ namespace PhieuKhamBenh
             this.ResumeLayout(false);
 
         }
-
-        private System.Windows.Forms.Button Buttoninvaluu;
-        private System.Windows.Forms.Button btnNhaplai;
         private System.Windows.Forms.Button btnQuaylai;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
@@ -630,5 +614,6 @@ namespace PhieuKhamBenh
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Button Buttoninvaluu;
     }
 }

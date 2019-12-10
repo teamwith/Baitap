@@ -28,20 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnXem = new System.Windows.Forms.Button();
             this.btnTaophieumoi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHoso = new System.Windows.Forms.Button();
+            this.Xemdanhsach = new System.Windows.Forms.Button();
+            this.Quaylai = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnXem
-            // 
-            this.btnXem.Location = new System.Drawing.Point(26, 175);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(165, 58);
-            this.btnXem.TabIndex = 0;
-            this.btnXem.Text = "Xem danh sách";
-            this.btnXem.UseVisualStyleBackColor = true;
             // 
             // btnTaophieumoi
             // 
@@ -62,24 +53,35 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Welcome!!!";
             // 
-            // btnHoso
+            // Xemdanhsach
             // 
-            this.btnHoso.Location = new System.Drawing.Point(147, 253);
-            this.btnHoso.Name = "btnHoso";
-            this.btnHoso.Size = new System.Drawing.Size(165, 58);
-            this.btnHoso.TabIndex = 2;
-            this.btnHoso.Text = "Hồ sơ của bạn";
-            this.btnHoso.UseVisualStyleBackColor = true;
+            this.Xemdanhsach.Location = new System.Drawing.Point(12, 175);
+            this.Xemdanhsach.Name = "Xemdanhsach";
+            this.Xemdanhsach.Size = new System.Drawing.Size(177, 58);
+            this.Xemdanhsach.TabIndex = 2;
+            this.Xemdanhsach.Text = "Xem danh sách";
+            this.Xemdanhsach.UseVisualStyleBackColor = true;
+            this.Xemdanhsach.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Quaylai
+            // 
+            this.Quaylai.Location = new System.Drawing.Point(135, 267);
+            this.Quaylai.Name = "Quaylai";
+            this.Quaylai.Size = new System.Drawing.Size(177, 58);
+            this.Quaylai.TabIndex = 3;
+            this.Quaylai.Text = "Quay lại";
+            this.Quaylai.UseVisualStyleBackColor = true;
+            this.Quaylai.Click += new System.EventHandler(this.Quaylai_Click);
             // 
             // Thaotac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 337);
-            this.Controls.Add(this.btnHoso);
+            this.Controls.Add(this.Quaylai);
+            this.Controls.Add(this.Xemdanhsach);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTaophieumoi);
-            this.Controls.Add(this.btnXem);
             this.MaximizeBox = false;
             this.Name = "Thaotac";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -90,10 +92,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.Button btnTaophieumoi;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHoso;
+        private System.Windows.Forms.Button Xemdanhsach;
+        private System.Windows.Forms.Button Quaylai;
     }
 }
