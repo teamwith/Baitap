@@ -25,9 +25,10 @@ namespace PhieuKhamBenh
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+           /* this.Hide();
             InPhieu ip = new InPhieu();
             ip.Show();
+            */
         }
 
         private void Quaylai_Click(object sender, EventArgs e)

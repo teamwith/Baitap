@@ -30,7 +30,6 @@
         {
             this.btnTaophieumoi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.Xemdanhsach = new System.Windows.Forms.Button();
             this.Quaylai = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -53,19 +52,9 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Welcome!!!";
             // 
-            // Xemdanhsach
-            // 
-            this.Xemdanhsach.Location = new System.Drawing.Point(12, 175);
-            this.Xemdanhsach.Name = "Xemdanhsach";
-            this.Xemdanhsach.Size = new System.Drawing.Size(177, 58);
-            this.Xemdanhsach.TabIndex = 2;
-            this.Xemdanhsach.Text = "Xem danh sách";
-            this.Xemdanhsach.UseVisualStyleBackColor = true;
-            this.Xemdanhsach.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Quaylai
             // 
-            this.Quaylai.Location = new System.Drawing.Point(135, 267);
+            this.Quaylai.Location = new System.Drawing.Point(36, 175);
             this.Quaylai.Name = "Quaylai";
             this.Quaylai.Size = new System.Drawing.Size(177, 58);
             this.Quaylai.TabIndex = 3;
@@ -77,9 +66,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 337);
+            this.ClientSize = new System.Drawing.Size(454, 276);
             this.Controls.Add(this.Quaylai);
-            this.Controls.Add(this.Xemdanhsach);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTaophieumoi);
             this.MaximizeBox = false;
@@ -94,7 +82,6 @@
         #endregion
         private System.Windows.Forms.Button btnTaophieumoi;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Xemdanhsach;
         private System.Windows.Forms.Button Quaylai;
     }
 }

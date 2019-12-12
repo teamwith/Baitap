@@ -90,22 +90,18 @@
             // txtUser
             // 
             this.txtUser.Location = new System.Drawing.Point(107, 54);
-            this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(282, 47);
+            this.txtUser.Size = new System.Drawing.Size(282, 24);
             this.txtUser.TabIndex = 5;
-            //  this.txtUser.TextChanged += new System.KeyEventHandler(this.TxtUser_TextChanged);
             // 
             // txtPassword
             // 
             this.txtPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.txtPassword.Location = new System.Drawing.Point(106, 139);
-            this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '❤';
-            this.txtPassword.Size = new System.Drawing.Size(282, 48);
+            this.txtPassword.Size = new System.Drawing.Size(282, 24);
             this.txtPassword.TabIndex = 6;
-            //      this.txtPassword.TextChanged += new System.EventHandler(this.TxtPassword_TextChanged);
             // 
             // cbxHienmatkhau
             // 
@@ -152,6 +148,9 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+            //
+            // errChiTiet
+     
 
         }
 
@@ -166,5 +165,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.CheckBox cbxHienmatkhau;
         private System.Windows.Forms.Label lblThongbao;
+        private System.Windows.Forms.ErrorProvider errChiTiet;
     }
 }
