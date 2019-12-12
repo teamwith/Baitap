@@ -8,3 +8,13 @@ F:\TeamWith\PhieuKhamBenh\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.MainForm.resourc
 F:\TeamWith\PhieuKhamBenh\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.csproj.GenerateResource.cache
 F:\TeamWith\PhieuKhamBenh\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.Login.resources
 F:\TeamWith\PhieuKhamBenh\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.Thaotac.resources
+F:\TeamWith\Baitap\PhieuKhamBenh\bin\Debug\PhieuKhamBenh.exe.config
+F:\TeamWith\Baitap\PhieuKhamBenh\bin\Debug\PhieuKhamBenh.exe
+F:\TeamWith\Baitap\PhieuKhamBenh\bin\Debug\PhieuKhamBenh.pdb
+F:\TeamWith\Baitap\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.csprojAssemblyReference.cache
+F:\TeamWith\Baitap\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.Login.resources
+F:\TeamWith\Baitap\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.MainForm.resources
+F:\TeamWith\Baitap\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.Thaotac.resources
+F:\TeamWith\Baitap\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.csproj.GenerateResource.cache
+F:\TeamWith\Baitap\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.exe
+F:\TeamWith\Baitap\PhieuKhamBenh\obj\Debug\PhieuKhamBenh.pdb

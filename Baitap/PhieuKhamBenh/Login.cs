@@ -90,5 +90,21 @@ namespace PhieuKhamBenh
                 txtPassword.Focus();
             }
         }
+
+        private void User(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtPassword.Focus();
+            }
+        }
+
+        private void pass(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnDangnhap.PerformClick();
+            }
+        }
     }
 }

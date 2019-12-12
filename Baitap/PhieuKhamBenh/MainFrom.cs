@@ -55,9 +55,9 @@ namespace PhieuKhamBenh
             DataSet ds = new DataSet();
            SqlDataAdapter dap = new SqlDataAdapter(sql, con);
             //Dùng phương thức Fill của DataAdapter để đổ dữ liệu từ DataSource tới DataSet
-              dap.Fill(ds);
+            //dap.Fill(ds);
             //Gắn dữ liệu từ DataSet lên DataGridView
-           dgvKetqua.DataSource = ds.Tables[0];
+           //dgvKetqua.DataSource = ds.Tables[0];
         }
         void TableLayoutPanel2Paint(object sender, PaintEventArgs e)
         {
@@ -107,8 +107,18 @@ namespace PhieuKhamBenh
            string sql = "";
 
             //Chúng ta sử dụng control ErrorProvider để hiển thị lỗi
-            //Kiểm tra tên sản phầm có bị để trống không
-
+            //Kiểm tra tên có bị để trống không
+            if (txtMaphieu.Text.Trim() == "")
+            {
+                errorChiTiet.SetError(txtMaphieu, "Bạn không thể để trống Mã phiếu!");
+                return;
+            }
+            else
+            {
+                errorChiTiet.Clear();
+            }
+            //
+            //
             if (txtTenbenhnhan.Text.Trim() == "")
             {
                 errorChiTiet.SetError(txtTenbenhnhan, "Bạn không thể để trống tên bệnh nhân!");
@@ -118,7 +128,7 @@ namespace PhieuKhamBenh
             {
                 errorChiTiet.Clear();
             }
-            //Kiểm tra ngày sản xuất, lỗi nếu người sử dụng nhập vào ngày sản xuất lớn hơn ngày hiện tại
+            //Kiểm tra 
             if (radioNam.Checked.ToString() == "")
             {
                 errorChiTiet.SetError(radioNam, "Bạn cần phải chọn giới tính !");
@@ -128,7 +138,8 @@ namespace PhieuKhamBenh
             {
                 errorChiTiet.Clear();
             }
-            //Kiểm tra đơn vị xem có để trống không
+            //
+            //
             if (txtDiachi.Text.Trim() == "")
             {
                 errorChiTiet.SetError(txtDiachi, "Bạn không thể để trống địa chỉ!");
@@ -138,7 +149,9 @@ namespace PhieuKhamBenh
             {
                 errorChiTiet.Clear();
             }
-            //Kiểm tra đơn giá
+
+            //
+            //
             if (txtTiensubenh.Text.Trim() == "")
             {
                 errorChiTiet.SetError(txtTiensubenh, "Bạn không thể để trống tiền sử bệnh!");
@@ -186,12 +199,8 @@ namespace PhieuKhamBenh
                 sql += "Diachi = '" + txtDiachi.Text+ "',";
                 sql += "Tiensubenh = '" + txtTiensubenh + "',";
                 sql += "Donvi = N'" + txtDonvi.Text + "',";
-                sql += "Matrieuchung ='" + txtmatrieuchung1.Text + "',";
-                sql += "Matrieuchung ='" + txtmatrieuchung2.Text + "',";
-                sql += "Matrieuchung ='" + txtmatrieuchung3.Text + "',";
-                sql += "Tentrieuchung = '" + txttentrieuchung1.Text + "',";
-                sql += "Tentrieuchung = '" + txttentrieuchung2.Text + "',";
-                sql += "Tentrieuchung = '" + txttentrieuchung3.Text + "',";
+                sql += "Matrieuchung ='" + ((txtmatrieuchung1.Text) +( txtmatrieuchung2.Text)+(txtmatrieuchung3.Text)) + "',";
+                sql += "Tentrieuchung = '" +(( txttentrieuchung1.Text )+ (txttentrieuchung2.Text)+(txttentrieuchung3.Text))+"',";
                 sql += "Ketluan = N'" + txtKetluan.Text + "' ";
                 sql += "Where Maphieu = '" + txtMaphieu.Text + "'";
             }
@@ -213,6 +222,9 @@ namespace PhieuKhamBenh
             HienChiTiet(false);
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
+            this.Hide();
+            MainForm mF = new MainForm();
+            mF.Show();
         }
       
         private void btnHuy_Click(object sender, EventArgs e)
@@ -394,6 +406,14 @@ namespace PhieuKhamBenh
         private void txttentrieuchung3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void maphieu(object sender, KeyEventArgs e)
+        {
+            if(e.KeyData==Keys.Enter)
+            {
+                txtTenbenhnhan.Focus();
+            }
         }
     }
     

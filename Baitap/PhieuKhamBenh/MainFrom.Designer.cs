@@ -51,9 +51,9 @@ namespace PhieuKhamBenh
         private  void  InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -94,6 +94,8 @@ namespace PhieuKhamBenh
             this.label9 = new System.Windows.Forms.Label();
             this.txtMaphieu = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.radioNam = new System.Windows.Forms.RadioButton();
             this.errorChiTiet = new System.Windows.Forms.ErrorProvider(this.components);
             this.dgvKetqua = new System.Windows.Forms.DataGridView();
             this.maphieuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -114,16 +116,14 @@ namespace PhieuKhamBenh
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.phieukhambenhTableAdapter = new PhieuKhamBenh.Kham_benhDataSetTableAdapters.PhieukhambenhTableAdapter();
-            this.radioNam = new System.Windows.Forms.RadioButton();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorChiTiet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetqua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phieukhambenhBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khambenhDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kham_benhDataSet)).BeginInit();
-            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -256,7 +256,7 @@ namespace PhieuKhamBenh
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(241, 44);
             this.btnLuu.TabIndex = 1;
-            this.btnLuu.Text = "In phiếu và lưu";
+            this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -300,16 +300,15 @@ namespace PhieuKhamBenh
             // txtTenbenhnhan
             // 
             this.txtTenbenhnhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtTenbenhnhan.Location = new System.Drawing.Point(227, 41);
-            this.txtTenbenhnhan.Multiline = true;
+            this.txtTenbenhnhan.Location = new System.Drawing.Point(225, 41);
             this.txtTenbenhnhan.Name = "txtTenbenhnhan";
-            this.txtTenbenhnhan.Size = new System.Drawing.Size(285, 22);
+            this.txtTenbenhnhan.Size = new System.Drawing.Size(285, 30);
             this.txtTenbenhnhan.TabIndex = 10;
             // 
             // txtDiachi
             // 
             this.txtDiachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtDiachi.Location = new System.Drawing.Point(227, 97);
+            this.txtDiachi.Location = new System.Drawing.Point(225, 97);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(285, 30);
             this.txtDiachi.TabIndex = 8;
@@ -317,7 +316,7 @@ namespace PhieuKhamBenh
             // txtTiensubenh
             // 
             this.txtTiensubenh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtTiensubenh.Location = new System.Drawing.Point(763, 97);
+            this.txtTiensubenh.Location = new System.Drawing.Point(761, 97);
             this.txtTiensubenh.Name = "txtTiensubenh";
             this.txtTiensubenh.Size = new System.Drawing.Size(181, 30);
             this.txtTiensubenh.TabIndex = 24;
@@ -326,7 +325,7 @@ namespace PhieuKhamBenh
             // 
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(520, 94);
+            this.label15.Location = new System.Drawing.Point(518, 94);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(161, 33);
             this.label15.TabIndex = 23;
@@ -337,7 +336,7 @@ namespace PhieuKhamBenh
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(520, 38);
+            this.label11.Location = new System.Drawing.Point(518, 38);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(161, 33);
             this.label11.TabIndex = 11;
@@ -358,7 +357,7 @@ namespace PhieuKhamBenh
             // txtKetluan
             // 
             this.txtKetluan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtKetluan.Location = new System.Drawing.Point(227, 346);
+            this.txtKetluan.Location = new System.Drawing.Point(225, 346);
             this.txtKetluan.Multiline = true;
             this.txtKetluan.Name = "txtKetluan";
             this.txtKetluan.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -379,7 +378,7 @@ namespace PhieuKhamBenh
             // txttentrieuchung3
             // 
             this.txttentrieuchung3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txttentrieuchung3.Location = new System.Drawing.Point(520, 310);
+            this.txttentrieuchung3.Location = new System.Drawing.Point(518, 310);
             this.txttentrieuchung3.Name = "txttentrieuchung3";
             this.txttentrieuchung3.Size = new System.Drawing.Size(235, 30);
             this.txttentrieuchung3.TabIndex = 20;
@@ -388,7 +387,7 @@ namespace PhieuKhamBenh
             // txttentrieuchung2
             // 
             this.txttentrieuchung2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txttentrieuchung2.Location = new System.Drawing.Point(520, 268);
+            this.txttentrieuchung2.Location = new System.Drawing.Point(518, 268);
             this.txttentrieuchung2.Name = "txttentrieuchung2";
             this.txttentrieuchung2.Size = new System.Drawing.Size(235, 30);
             this.txttentrieuchung2.TabIndex = 19;
@@ -396,7 +395,7 @@ namespace PhieuKhamBenh
             // txttentrieuchung1
             // 
             this.txttentrieuchung1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txttentrieuchung1.Location = new System.Drawing.Point(520, 222);
+            this.txttentrieuchung1.Location = new System.Drawing.Point(518, 222);
             this.txttentrieuchung1.Name = "txttentrieuchung1";
             this.txttentrieuchung1.Size = new System.Drawing.Size(235, 30);
             this.txttentrieuchung1.TabIndex = 18;
@@ -404,7 +403,7 @@ namespace PhieuKhamBenh
             // txtmatrieuchung3
             // 
             this.txtmatrieuchung3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtmatrieuchung3.Location = new System.Drawing.Point(227, 310);
+            this.txtmatrieuchung3.Location = new System.Drawing.Point(225, 310);
             this.txtmatrieuchung3.Name = "txtmatrieuchung3";
             this.txtmatrieuchung3.Size = new System.Drawing.Size(215, 30);
             this.txtmatrieuchung3.TabIndex = 17;
@@ -412,7 +411,7 @@ namespace PhieuKhamBenh
             // txtmatrieuchung2
             // 
             this.txtmatrieuchung2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtmatrieuchung2.Location = new System.Drawing.Point(227, 268);
+            this.txtmatrieuchung2.Location = new System.Drawing.Point(225, 268);
             this.txtmatrieuchung2.Name = "txtmatrieuchung2";
             this.txtmatrieuchung2.Size = new System.Drawing.Size(215, 30);
             this.txtmatrieuchung2.TabIndex = 16;
@@ -420,7 +419,7 @@ namespace PhieuKhamBenh
             // txtmatrieuchung1
             // 
             this.txtmatrieuchung1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtmatrieuchung1.Location = new System.Drawing.Point(227, 222);
+            this.txtmatrieuchung1.Location = new System.Drawing.Point(225, 222);
             this.txtmatrieuchung1.Name = "txtmatrieuchung1";
             this.txtmatrieuchung1.Size = new System.Drawing.Size(215, 30);
             this.txtmatrieuchung1.TabIndex = 15;
@@ -429,7 +428,7 @@ namespace PhieuKhamBenh
             // 
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(520, 178);
+            this.label13.Location = new System.Drawing.Point(518, 178);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(161, 33);
             this.label13.TabIndex = 14;
@@ -460,7 +459,7 @@ namespace PhieuKhamBenh
             // txtDonvi
             // 
             this.txtDonvi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtDonvi.Location = new System.Drawing.Point(763, 139);
+            this.txtDonvi.Location = new System.Drawing.Point(761, 139);
             this.txtDonvi.Name = "txtDonvi";
             this.txtDonvi.Size = new System.Drawing.Size(181, 30);
             this.txtDonvi.TabIndex = 3;
@@ -469,7 +468,7 @@ namespace PhieuKhamBenh
             // 
             this.Donvi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Donvi.ForeColor = System.Drawing.Color.Black;
-            this.Donvi.Location = new System.Drawing.Point(520, 136);
+            this.Donvi.Location = new System.Drawing.Point(518, 136);
             this.Donvi.Name = "Donvi";
             this.Donvi.Size = new System.Drawing.Size(161, 33);
             this.Donvi.TabIndex = 4;
@@ -479,7 +478,7 @@ namespace PhieuKhamBenh
             // txtBacsykham
             // 
             this.txtBacsykham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtBacsykham.Location = new System.Drawing.Point(227, 139);
+            this.txtBacsykham.Location = new System.Drawing.Point(225, 139);
             this.txtBacsykham.Name = "txtBacsykham";
             this.txtBacsykham.Size = new System.Drawing.Size(285, 30);
             this.txtBacsykham.TabIndex = 2;
@@ -511,11 +510,11 @@ namespace PhieuKhamBenh
             // txtMaphieu
             // 
             this.txtMaphieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaphieu.Location = new System.Drawing.Point(227, 5);
-            this.txtMaphieu.Multiline = true;
+            this.txtMaphieu.Location = new System.Drawing.Point(225, 5);
             this.txtMaphieu.Name = "txtMaphieu";
-            this.txtMaphieu.Size = new System.Drawing.Size(171, 22);
+            this.txtMaphieu.Size = new System.Drawing.Size(171, 30);
             this.txtMaphieu.TabIndex = 6;
+            this.txtMaphieu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.maphieu);
             // 
             // tableLayoutPanel2
             // 
@@ -524,7 +523,7 @@ namespace PhieuKhamBenh
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 291F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 197F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
             this.tableLayoutPanel2.Controls.Add(this.txtMaphieu, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.Bacsykham, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.txtBacsykham, 1, 3);
@@ -566,6 +565,32 @@ namespace PhieuKhamBenh
             this.tableLayoutPanel2.TabIndex = 5;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.radioNam, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(761, 41);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(74, 48);
+            this.tableLayoutPanel3.TabIndex = 25;
+            // 
+            // radioNam
+            // 
+            this.radioNam.AutoSize = true;
+            this.radioNam.ForeColor = System.Drawing.Color.Black;
+            this.radioNam.Location = new System.Drawing.Point(3, 3);
+            this.radioNam.Name = "radioNam";
+            this.radioNam.Size = new System.Drawing.Size(58, 18);
+            this.radioNam.TabIndex = 0;
+            this.radioNam.TabStop = true;
+            this.radioNam.Text = "Nam";
+            this.radioNam.UseVisualStyleBackColor = true;
+            this.radioNam.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
             // errorChiTiet
             // 
             this.errorChiTiet.ContainerControl = this;
@@ -574,14 +599,14 @@ namespace PhieuKhamBenh
             // 
             this.dgvKetqua.AllowUserToOrderColumns = true;
             this.dgvKetqua.AutoGenerateColumns = false;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKetqua.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKetqua.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvKetqua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKetqua.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maphieuDataGridViewTextBoxColumn,
@@ -595,24 +620,24 @@ namespace PhieuKhamBenh
             this.tentrieuchungDataGridViewTextBoxColumn,
             this.ketluanDataGridViewTextBoxColumn});
             this.dgvKetqua.DataSource = this.phieukhambenhBindingSource;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvKetqua.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvKetqua.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvKetqua.Location = new System.Drawing.Point(28, 527);
             this.dgvKetqua.Name = "dgvKetqua";
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKetqua.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKetqua.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvKetqua.RowHeadersWidth = 51;
             this.dgvKetqua.RowTemplate.Height = 24;
             this.dgvKetqua.Size = new System.Drawing.Size(1306, 166);
@@ -762,32 +787,6 @@ namespace PhieuKhamBenh
             // 
             this.phieukhambenhTableAdapter.ClearBeforeFill = true;
             // 
-            // radioNam
-            // 
-            this.radioNam.AutoSize = true;
-            this.radioNam.ForeColor = System.Drawing.Color.Black;
-            this.radioNam.Location = new System.Drawing.Point(3, 3);
-            this.radioNam.Name = "radioNam";
-            this.radioNam.Size = new System.Drawing.Size(58, 18);
-            this.radioNam.TabIndex = 0;
-            this.radioNam.TabStop = true;
-            this.radioNam.Text = "Nam";
-            this.radioNam.UseVisualStyleBackColor = true;
-            this.radioNam.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.radioNam, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(763, 41);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(74, 48);
-            this.tableLayoutPanel3.TabIndex = 25;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -816,13 +815,13 @@ namespace PhieuKhamBenh
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorChiTiet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetqua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phieukhambenhBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khambenhDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kham_benhDataSet)).EndInit();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

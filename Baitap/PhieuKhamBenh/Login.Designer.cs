@@ -93,6 +93,7 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(282, 24);
             this.txtUser.TabIndex = 5;
+            this.txtUser.KeyDown += new System.Windows.Forms.KeyEventHandler(this.User);
             // 
             // txtPassword
             // 
@@ -102,6 +103,7 @@
             this.txtPassword.PasswordChar = '❤';
             this.txtPassword.Size = new System.Drawing.Size(282, 24);
             this.txtPassword.TabIndex = 6;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pass);
             // 
             // cbxHienmatkhau
             // 
@@ -148,9 +150,6 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-            //
-            // errChiTiet
-     
 
         }
 
